@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+</head>
+<body>
+  <div id="checkout-container">
+    <!-- The content of the product to be purchased will appear here -->
+    <h1>Checkout Page</h1>
+    <p id="product-details"></p>
+  </div>
+
+  <script>
+    // Get the product ID from the URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get('product');
+
+    if (productId) {
+      // Example of getting product details (you could also fetch from your database)
+      document.getElementById('product-details').innerHTML = `You have purchased the product with ID: ${productId}`;
+    } else {
+      document.getElementById('product-details').innerHTML = 'No product selected for checkout.';
+    }
+  </script>
+</body>
+</html>

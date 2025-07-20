@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agrinest - About Us</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href=""><img src="/img/banner/Agrinest logo.jpg" alt="weblogo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a " href=" index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <!-- <li><a href="contact.html">Contact</a></li> -->
+                <li><a href="SignIn.html">Sign In</a></li>
+                <li><a href="cart.html"><i class="fal fa-shopping-cart"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Left side: Image -->
+        <div class="image-section">
+            <img src="img/banner/agriculture image.jpg" alt="Farmers and Consumers Connection">
+        </div>
+
+        <!-- Right side: Content -->
+        <div class="content-section">
+            <h1>About Agrinest</h1>
+            <p>
+                Agrinest is a platform designed to connect farmers directly with consumers, making it easier for farmers
+                to sell essential agricultural products such as fertilizers, seeds, and farming tools. Our goal is to
+                support the farming community by providing them with a space to grow their businesses and reach more
+                customers, while offering consumers easy access to high-quality, reliable farming supplies.
+
+                We started Agrinest with the belief that by strengthening the bond between farmers and consumers, we can
+                promote sustainable agriculture and create a more transparent and fair marketplace. At Agrinest, we are
+                committed to helping farmers thrive by cutting out unnecessary middlemen, ensuring that both farmers and
+                consumers get the best value.
+
+                Whether you’re a farmer looking to expand your business or a consumer looking for trusted farming
+                supplies, Agrinest is here to help. Together, we’re building a community that values trust, quality, and
+                sustainability in agriculture.
+            </p>
+            <p class="hidden">
+                Agrinest is a platform designed to connect farmers directly with consumers, making it easier for farmers
+                to sell essential agricultural products such as fertilizers, seeds, and farming tools. Our goal is to
+                support the farming community by providing them with a space to grow their businesses and reach more
+                customers, while offering consumers easy access to high-quality, reliable farming supplies.
+
+                We started Agrinest with the belief that by strengthening the bond between farmers and consumers, we can
+                promote sustainable agriculture and create a more transparent and fair marketplace. At Agrinest, we are
+                committed to helping farmers thrive by cutting out unnecessary middlemen, ensuring that both farmers and
+                consumers get the best value.
+
+                Whether you’re a farmer looking to expand your business or a consumer looking for trusted farming
+                supplies, Agrinest is here to help. Together, we’re building a community that values trust, quality, and
+                sustainability in agriculture. </p>
+            <a href="#" id="view-more">View More</a>
+        </div>
+    </div>
+
+    <script>
+        // Script to handle "View More" functionality
+        const viewMoreLink = document.getElementById('view-more');
+        const hiddenText = document.querySelector('.hidden');
+
+        viewMoreLink.addEventListener('click', function (event) {
+            event.preventDefault();
+            hiddenText.style.display = hiddenText.style.display === 'block' ? 'none' : 'block';
+            viewMoreLink.textContent = hiddenText.style.display === 'block' ? 'View Less' : 'View More';
+        });
+    </script>
+    <!---------------------------------FOOTER----------------------------------------------------->
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/banner/Agrinest logo.jpg" alt="" width="60" height="70">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>Lorem ipsum dolor sit amet.</p>
+            <p><strong>Phone:</strong>Lorem ipsum dolor sit amet.</p>
+            <div class="follow">
+                <h4>follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <!-- <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col-1"></div>
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+    </footer>
+
+    <!-----------------------------////-FOOTER////--------------------------------------------------->
+
+</body>
+
+</html>

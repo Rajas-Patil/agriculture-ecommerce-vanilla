@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agrinest</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+  <link rel="stylesheet" href="shop.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section id="header">
+    <a href=""><img src="/img/banner/Agrinest logo.jpg" alt="weblogo"></a>
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="shop.html">Shop</a></li>
+        <!-- <li><a href="blog.html">Blog</a></li> -->
+        <li><a href="about.html">About</a></li>
+        <li><a href="SignIn.html">Sign In</a></li>
+        <li><a href="cart.html"><i class="fal fa-shopping-cart"></i></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- <section id="hero">
+            <h1>Agriculture</h1>
+            <h2>Market Place</h2>
+            <img src="/img/banner/agriculture image.jpg" alt=""> -->
+  <!-- <button>Shop Now</button> -->
+
+  <!-- </section> -->
+
+
+  <!-- --------------------------------Products -------------------------------------------->
+  <div class="container">
+    <h1>Products</h1>
+    <div class="product-list" >
+
+      <!-- Product 1 -->
+      <div class="product-card" class="product-item" id="product-1">
+        <img src="/img/products/bioboostplantfood.jpg" alt="Product 1">
+        <h2>Bio Boost Plant Food</h2>
+        <p>Rs.600</p>
+        <div class="product-actions">
+          <button id="add-to-cart" data-product-id="1" class="add-to-cart"
+            onclick="addToCart('Bio Boost Plant Food', 600)">Add to Cart</button>
+          <button id="buy-now" data-product-id="1" class="buy-now" onclick="buyNow('Bio Boost Plant Food',600)">Buy
+            Now</button>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card" class="product-item" id="product-2">
+        <img src="img/products/Hortigrade.jpg" alt="Product 2">
+        <h2>Hortigrade</h2>
+        <p>Rs.499</p>
+        <div class="product-actions">
+          <button id="add-to-cart" data-product-id="1" class="add-to-cart"
+            onclick="addToCart('Hortigrade', 499)">Add to Cart</button>
+          <button id="buy-now" data-product-id="1" class="buy-now" onclick="buyNow('Hortigrade', 499)">Buy
+            Now</button>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card" id="product-3">
+        <img src="img/products/Nurtirich.jpg" alt="Product 3">
+        <h2>Nurtirich</h2>
+        <p>Rs.399</p>
+        <div class="product-actions">
+          <button id="add-to-cart" data-product-id="1" class="add-to-cart"
+            onclick="addToCart('Nurtirich',399)">Add to Cart</button>
+          <button id="buy-now" data-product-id="1" class="buy-now" onclick="buyNow('Nurtirich', 399)">Buy
+            Now</button>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card" id="product-4">
+        <img src="img/products/Hariyali.jpg" alt="Product 4">
+        <h2>Hariyali</h2>
+        <p>Rs.799</p>
+        <div class="product-actions">
+          <button id="add-to-cart" data-product-id="1" class="add-to-cart"
+            onclick="addToCart('Hariyali', 799)">Add to Cart</button>
+          <button id="buy-now" data-product-id="1" class="buy-now" onclick="buyNow('Hariyali', 799)">Buy
+            Now</button>
+        </div>
+      </div>
+      <!-- Product 4 -->
+      <div class="product-card" id="product-4">
+        <img src="img/products/Tomatoseeds.jpg" alt="Product 4">
+        <h2>Grow Delight-Tomato seeds</h2>
+        <p>Rs.899</p>
+        <div class="product-actions">
+          <button id="add-to-cart" data-product-id="1" class="add-to-cart"
+            onclick="addToCart('Grow Delight-Tomato seeds',899)">Add to Cart</button>
+          <button id="buy-now" data-product-id="1" class="buy-now" onclick="buyNow('Grow Delight-Tomato seeds', 899)">Buy
+            Now</button>
+        </div>
+      </div>
+      <!-- Product 4 -->
+      <div class="product-card" id="product-4">
+        <img src="img/products/watermelonseeds.jpg" alt="Product 4">
+        <h2>Go Vegan-Watermelon Seeds</h2>
+        <p>Rs.799</p>
+        <div class="product-actions">
+          <button id="add-to-cart" data-product-id="1" class="add-to-cart"
+            onclick="addToCart('Go Vegan-Watermelon Seeds', 799)">Add to Cart</button>
+          <button id="buy-now" data-product-id="1" class="buy-now" onclick="buyNow('Go Vegan-Watermelon Seeds', 799)">Buy
+            Now</button>
+        </div>
+      </div>
+      <!-- Product 4 -->
+      <div class="product-card" id="product-4">
+        <img src="img/products/mangoseed.jpg" Product 4">
+        <h2>Kalagura gampa-Mango Seed</h2>
+        <p>Rs.999</p>
+        <div class="product-actions">
+          <button id="add-to-cart" data-product-id="1" class="add-to-cart"
+            onclick="addToCart('Kalagura gampa-Mango Seed', 999)">Add to Cart</button>
+          <button id="buy-now" data-product-id="1" class="buy-now" onclick="buyNow('Kalagura gampa-Mango Seed',999)">Buy
+            Now</button>
+        </div>
+      </div>
+      <!-- Product 4 -->
+      <div class="product-card" id="product-4">
+        <img src="img/products/cashew.jpg" alt="Product 4">
+        <h2>Nuticious-Cashew</h2>
+        <p>Rs.899</p>
+        <div class="product-actions">
+          <button id="add-to-cart" data-product-id="1" class="add-to-cart"
+            onclick="addToCart('Nuticious-Cashe', 899)">Add to Cart</button>
+          <button id="buy-now" data-product-id="1" class="buy-now" onclick="buyNow('Nuticious-Cashe',899)">Buy
+            Now</button>
+        </div>
+      </div>
+      <!-- Product 4 -->
+      <div class="product-card" id="product-4">
+        <img src="img/products/gardeninghandtool.jpg" alt="Product 4">
+        <h2>Gardenin hand Tool</h2>
+        <p>Rs.1200</p>
+        <div class="product-actions">
+          <button id="add-to-cart" data-product-id="1" class="add-to-cart"
+            onclick="addToCart('Gardenin hand Tool', 1200)">Add to Cart</button>
+          <button id="buy-now" data-product-id="1" class="buy-now" onclick="buyNow('Gardenin hand Tool', 1200)">Buy
+            Now</button>
+        </div>
+      </div>
+      <!-- Product 4 -->
+      <div class="product-card" id="product-4">
+        <img src="img/products/farmerfriendshowel.jpg" alt="Product 4">
+        <h2>Showel</h2>
+        <p>RS.1499</p>
+        <div class="product-actions">
+          <button id="add-to-cart" data-product-id="1" class="add-to-cart"
+            onclick="addToCart('Showel', 1499)">Add to Cart</button>
+          <button id="buy-now" data-product-id="1" class="buy-now" onclick="buyNow('Showel', 1499)">Buy
+            Now</button>
+        </div>
+      </div>
+      <!-- Product 4 -->
+      <div class="product-card" id="product-4">
+        <img src="img/products/seedplanter.jpg" alt="Product 4">
+        <h2>Portable Seed Planter</h2>
+        <p>Rs.2999</p>
+        <div class="product-actions">
+          <button id="add-to-cart" data-product-id="1" class="add-to-cart"
+            onclick="addToCart('Portable Seed Planter',2999)">Add to Cart</button>
+          <button id="buy-now" data-product-id="1" class="buy-now" onclick="buyNow('Portable Seed Planter', 2999)">Buy
+            Now</button>
+        </div>
+      </div>
+      <!-- Product 4 -->
+      <div class="product-card" id="product-4">
+        <img src="img/products/fertilizerrosesandorchids.jpg" alt="Product 4">
+        <h2>Organic Fertilizer for Roses and Orchids</h2>
+        <p>Rs.999</p>
+        <div class="product-actions">
+          <button id="add-to-cart" data-product-id="1" class="add-to-cart"
+            onclick="addToCart('Organic Fertilizer for Roses and Orchids',999)">Add to Cart</button>
+          <button id="buy-now" data-product-id="1" class="buy-now" onclick="buyNow('Organic Fertilizer for Roses and Orchids', 999)">Buy
+            Now</button>
+        </div>
+      </div>
+      <!-- Product 4 -->
+      <div class="product-card" id="product-4">
+        <img src="img/products/Usagriseeds.jpg" alt="Product 4">
+        <h2>Us AgriSeeds</h2>
+        <p>Rs.799</p>
+        <div class="product-actions">
+          <button id="add-to-cart" data-product-id="1" class="add-to-cart"
+            onclick="addToCart('Us AgriSeeds', 799)">Add to Cart</button>
+          <button id="buy-now" data-product-id="1" class="buy-now" onclick="buyNow('Us AgriSeeds', 799)">Buy
+            Now</button>
+        </div>
+      </div>
+      <!-- Product 4 -->
+      <div class="product-card" id="product-4">
+        <img src="img/products/peaagrihybridseeds.jpg" alt="Product 4">
+        <h2>Pea Hybrid seeds</h2>
+        <p>Rs.1000</p>
+        <div class="product-actions">
+          <button id="add-to-cart" data-product-id="1" class="add-to-cart"
+            onclick="addToCart('Pea Hybrid seeds', 1000)">Add to Cart</button>
+          <button id="buy-now" data-product-id="1" class="buy-now" onclick="buyNow('Pea Hybrid seeds', 1000)">Buy
+            Now</button>
+        </div>
+      </div>
+      <!-- Product 4 -->
+      <div class="product-card" id="product-4">
+        <img src="img/products/jamunseeds.jpg" alt="Product 4">
+        <h2>Jamun Seeds</h2>
+        <p>Rs.699</p>
+        <div class="product-actions">
+          <button id="add-to-cart" data-product-id="1" class="add-to-cart"
+            onclick="addToCart('Jamun Seeds', 699)">Add to Cart</button>
+          <button id="buy-now" data-product-id="1" class="buy-now" onclick="buyNow('Jamun Seeds', 699)">Buy
+            Now</button>
+        </div>
+      </div>
+      
+      <!-- Product 4 -->
+      <div class="product-card" id="product-4">
+        <img src="img/products/gardensoil.jpg" alt="Product 4">
+        <h2>Garden Soil</h2>
+        <p>Rs.999</p>
+        <div class="product-actions">
+          <button id="add-to-cart" data-product-id="1" class="add-to-cart"
+            onclick="addToCart('Garden Soil', 999)">Add to Cart</button>
+          <button id="buy-now" data-product-id="1" class="buy-now" onclick="buyNow('Garden Soil',999)">Buy
+            Now</button>
+        </div>
+      </div>
+      
+
+
+      <!-- Product 5 -->
+      <div class="product-card" id="product-5">
+        <img src="img/products/immunesupportcapsule.jpg" alt="Product 5">
+        <h2>Elderberry Fruit Extract</h2>
+        <p>$499.99</p>
+        <div class="product-actions">
+          <button id="add-to-cart" data-product-id="1" class="add-to-cart"
+            onclick="addToCart('Elderberry Fruit Extract', 499.99)">Add to Cart</button>
+          <button id="buy-now" data-product-id="1" class="buy-now" onclick="buyNow('Elderberry Fruit Extract', 499.99)">Buy
+            Now</button>
+        </div>
+      </div>
+      <div class="product-card" id="product-5">
+        <img src="/img/products/potassiumwaterfertilizer.jpg" alt="Product 5">
+        <h2>Potassium Water</h2>
+        <p>Rs.677</p>
+        <div class="product-actions">
+          <button id="add-to-cart" data-product-id="1" class="add-to-cart"
+            onclick="addToCart('Potassium Water', 677)">Add to Cart</button>
+          <button id="buy-now" data-product-id="1" class="buy-now" onclick="buyNow('Potassium Water', 677)">Buy
+            Now</button>
+        </div>
+      </div>
+      <div class="product-card" id="product-5">
+        <img src="img/products/Tomatoseeds.jpg" alt="Product 5">
+        <h2>Tomato Seeds</h2>
+        <p>Rs.799</p>
+        <div class="product-actions">
+          <button id="add-to-cart" data-product-id="1" class="add-to-cart"
+            onclick="addToCart('Tomato Seeds', 799)">Add to Cart</button>
+          <button id="buy-now" data-product-id="1" class="buy-now" onclick="buyNow('Tomato Seeds', 799)">Buy
+            Now</button>
+        </div>
+      </div>
+      <div class="product-card" id="product-5">
+        <img src="/img/products/gardensoil.jpg" alt="Product 5">
+        <h2>Garden Soil</h2>
+        <p>Rs.999</p>
+        <div class="product-actions">
+          <button id="add-to-cart" data-product-id="1" class="add-to-cart"
+            onclick="addToCart('Garden Soil', 999)">Add to Cart</button>
+          <button id="buy-now" data-product-id="1" class="buy-now" onclick="buyNow('Garden Soil', 999)">Buy
+            Now</button>
+        </div>
+      </div>
+      
+
+      <div id="purchase-confirmation" class="confirmation" style="display:none;">
+        <h2>Thank you for your purchase!</h2>
+        <p>You have purchased an order.</p>
+        <p>Your Order ID: <span id="order-id"></span></p>
+      </div>
+    </div>
+
+    <script>
+      // Function to add a product to the cart and store it in localStorage
+      function addToCart(productName, productPrice) {
+          // Retrieve existing cart data or create an empty array
+          let cart = JSON.parse(localStorage.getItem('cart')) || [];
+          
+          // Add new product to the cart
+          cart.push({ name: productName, price: productPrice });
+          
+          // Save updated cart data back to localStorage
+          localStorage.setItem('cart', JSON.stringify(cart));
+          
+          // Redirect to cart page
+          window.location.href = 'cart.html';
+      }
+  </script>
+
+    <script>
+      function buyNow() {
+        // Generate a random order ID
+        const orderId = Math.floor(Math.random() * 1000000);
+        document.getElementById("order-id").textContent = orderId;
+
+        // Display the confirmation message
+        document.getElementById("purchase-confirmation").style.display = 'block';
+
+        // Send purchase data to the backend
+        fetch('/api/purchase', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ orderId: orderId })
+        }).then(response => response.json())
+          .then(data => {
+            console.log('Purchase saved:', data);
+          })
+          .catch(error => {
+            console.error('Error saving purchase:', error);
+          });
+      }
+    </script>
+    <script>
+      // Check if the URL contains a "message=success" parameter
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('message') === 'success') {
+        alert('Successfully logged in!');  // Show a popup message
+      }
+    </script>
+    
+
+  </div>
+  </div> 
+
+  
+
+
+
+  <footer class="section-p1">
+    <div class="col">
+      <img class="logo" src="img/banner/Agrinest logo.jpg" alt="" width="60" height="70">
+      <h4>Contact</h4>
+      <p><strong>Address:</strong>Lorem ipsum dolor sit amet.</p>
+      <p><strong>Phone:</strong>Lorem ipsum dolor sit amet.</p>
+      <div class="follow">
+        <h4>follow us</h4>
+        <div class="icon">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-pinterest-p"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <h4>About</h4>
+      <a href="#">About Us</a>
+      <a href="#">Delivery information</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="col-1"></div>
+    <h4>My Account</h4>
+    <a href="#">Sign In</a>
+    <a href="#">View Cart</a>
+    <a href="#">My Wishlist</a>
+    <a href="#">Track My Order</a>
+    <a href="#">Help</a>
+    </div>
+    <div class="col install">
+      <h4>Install App</h4>
+      <p>From App Store or Google Play</p>
+      <div class="row">
+        <img src="img/pay/app.jpg" alt="">
+        <img src="img/pay/play.jpg" alt="">
+      </div>
+      <p>Secured Payment Gateways</p>
+      <img src="img/pay/pay.png" alt="">
+    </div>
+  </footer>
+
+   
+
+
+
+
+
+
+
+  <!-------------------------------- Product---------------------------------------- -->
+
+  <script src="script.js"></script>
+  <script src="shop.js"></script>
+  <script src="server.js"></script>
+</body>
+
+</html>
